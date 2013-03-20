@@ -38,7 +38,7 @@ class OAuth2_GrantType_UserCredentials implements OAuth2_GrantTypeInterface, OAu
         return $tokenData;
     }
 
-    public function validateTokenData(array $tokenData, array $clientData)
+    public function validateTokenData($tokenData, array $clientData)
     {
         // Scope is validated in the client class
         return true;
